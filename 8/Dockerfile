@@ -1,6 +1,7 @@
 FROM develar/java:latest
 
-RUN apk --update add pwgen ca-certificates libssl1.0 libuuid openssl apr libcrypto1.0 && \
+RUN apk --update add pwgen ca-certificates libssl1.0 libuuid openssl apr libcrypto1.0 groff less python py-pip && \
+    pip install awscli && \
     rm -rf /tmp/* /var/cache/apk/*
 
 ENV TOMCAT_MAJOR_VERSION 8
