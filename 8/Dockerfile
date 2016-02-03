@@ -21,6 +21,7 @@ ADD run.sh /run.sh
 RUN chmod +x /*.sh
 
 EXPOSE 8080
+VOLUME /tomcat/logs
 # reset entrypoint from parent image
 ENTRYPOINT []
 CMD ["/run.sh"]
