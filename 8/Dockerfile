@@ -6,6 +6,7 @@ RUN apk --update add pwgen ca-certificates libssl1.0 libuuid openssl apr libcryp
 ENV TOMCAT_MAJOR_VERSION 8
 ENV TOMCAT_MINOR_VERSION 8.0.30
 ENV CATALINA_HOME /tomcat
+ENV CATALINA_TMPDIR /tmp
 
 # INSTALL TOMCAT
 RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION}/v${TOMCAT_MINOR_VERSION}/bin/apache-tomcat-${TOMCAT_MINOR_VERSION}.tar.gz && \
