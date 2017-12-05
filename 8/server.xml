@@ -69,6 +69,7 @@
     <Connector port="8080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="8443"
+	       useSendfile="false"
 	       compression="on" compressionMinSize="1024" 
 	       compressibleMimeType="text/html,text/xhtml,text/xml,text/plain,text/css,text/javascript,application/javascript,text/json,application/json"/>
     <!-- A "Connector" using the shared thread pool-->
