@@ -1,4 +1,4 @@
-FROM develar/java:latest
+FROM anapsix/alpine-java:latest
 
 RUN apk --update add pwgen ca-certificates libssl1.0 libuuid openssl apr libcrypto1.0 && \
     rm -rf /tmp/* /var/cache/apk/*
