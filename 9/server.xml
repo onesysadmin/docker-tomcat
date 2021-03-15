@@ -168,7 +168,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
 					     requestAttributesEnabled="true"
                prefix="localhost_access_log" suffix=".txt"
-      	       pattern="combined" />
+      	       pattern="combined" maxDays="30"/>
 
       </Host>
     </Engine>
