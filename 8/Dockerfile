@@ -4,7 +4,7 @@ RUN apk --update add pwgen ca-certificates libssl1.0 libuuid openssl apr libcryp
     rm -rf /tmp/* /var/cache/apk/*
 
 ENV TOMCAT_MAJOR_VERSION 8
-ENV TOMCAT_MINOR_VERSION 8.5.64
+ENV TOMCAT_MINOR_VERSION 8.5.73
 ENV CATALINA_HOME /tomcat
 ENV CATALINA_TMPDIR /tmp
 
